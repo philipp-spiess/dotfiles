@@ -1,0 +1,22 @@
+#!/bin/bash
+tmux has-session -t pspdfkit
+if [ $? != 0 ]; then
+  tmux new-session -s pspdfkit -n 'PSPDFKit' -d
+  tmux send-keys -t pspdfkit 'cd ~/dev/PSPDFKit-Web' C-m
+  tmux send-keys -t pspdfkit 'yarn outdated' C-m
+
+  tmux split-window -h -t pspdfkit -p 50
+  tmux send-keys -t pspdfkit:0.1 'cd ~/dev/PSPDFKit-Web' C-m
+  tmux send-keys -t pspdfkit:0.1 'yarn test:unit:jest:watch' C-m
+
+  tmux split-window -v -t pspdfkit:0.1
+  tmux send-keys -t pspdfkit:0.2 'cd ~/dev/pssync-server' C-m
+  tmux send-keys -t pspdfkit:0.2 'script/server' C-m
+
+  tmux split-window -v -t pspdfkit:0.2
+  tmux send-keys -t pspdfkit:0.3 'cd ~/dev/PSPDFKit-Web' C-m
+  tmux send-keys -t pspdfkit:0.3 'yarn start' C-m
+fi
+
+tmux select-pane -t pspdfkit:0.0
+tmux attach -t pspdfkit

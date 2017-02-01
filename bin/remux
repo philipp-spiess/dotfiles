@@ -1,0 +1,6 @@
+#!/bin/bash
+ssh root@gamma.philippspiess.com -t tmux a
+if [ $? -eq 255 ]; then
+  # When in local WiFi, the router can't resolve the address properly ¯\_(ツ)_/¯
+  ssh root@192.168.0.100 -t tmux a
+fi

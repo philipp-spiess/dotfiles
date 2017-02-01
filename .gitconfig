@@ -1,0 +1,13 @@
+[user]
+	name = Philipp Spiess
+	email = hello@philippspiess.com
+	signingkey = C9324A30
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = vim
+[alias]
+	ir = rebase -i origin/master --autosquash --gpg-sign=hello@philippspiess.com
+	c = commit
+[commit]
+[gpg]
+	program = /usr/local/bin/gpg

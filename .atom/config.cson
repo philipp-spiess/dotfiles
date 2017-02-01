@@ -1,0 +1,98 @@
+"*":
+  autosave:
+    enabled: true
+  core:
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".flowconfig"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+    disabledPackages: [
+      "nuclide"
+      "wrap-guide"
+    ]
+    telemetryConsent: "limited"
+  docblockr:
+    simple_mode: true
+  editor:
+    fontSize: 18
+    invisibles: {}
+    preferredLineLength: 100
+  "exception-reporting":
+    userId: "d9049b40-7134-070e-fb29-238e601d443e"
+  linter:
+    errorPanelHeight: 24
+  "linter-eslint": {}
+  "linter-flow":
+    executablePath: "/Users/philipp/dev/PSPDFKit-Web/node_modules/.bin/flow"
+  "multi-wrap-guide":
+    locked: true
+  nuclide:
+    "nuclide-distraction-free-mode": {}
+    "nuclide-file-tree":
+      showOpenFiles: false
+    "nuclide-format-js":
+      nuclideFixHeader: false
+      requiresAddMissingRequires: false
+      requiresAddMissingTypes: false
+      requiresFormatRequires: false
+      requiresRemoveUnusedRequires: false
+      requiresRemoveUnusedTypes: false
+      requiresTransferComments: false
+    "nuclide-home":
+      showHome: false
+    use:
+      "nuclide-datatip": false
+      "nuclide-debugger-native": false
+      "nuclide-debugger-node": false
+      "nuclide-debugger-php": false
+      "nuclide-home": false
+      "nuclide-ios-simulator-logs": false
+      "nuclide-objc": false
+      "nuclide-ocaml": false
+      "nuclide-react-native": false
+      "nuclide-react-native-inspector": false
+  "spell-check":
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "source.js.jsx"
+      "source.c"
+    ]
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+".ansi.text":
+  editor:
+    preferredLineLength: 100
+".hack.html.text":
+  editor:
+    preferredLineLength: 100
+".hackfragment.source":
+  editor:
+    preferredLineLength: 100
+".hg-commit.text":
+  editor:
+    preferredLineLength: 100
+".null-grammar.plain.text":
+  editor:
+    preferredLineLength: 100
+  "multi-wrap-guide":
+    columns: [
+      80
+      100
+    ]
+".source.swift":
+  editor:
+    preferredLineLength: 100
