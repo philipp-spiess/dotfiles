@@ -1,5 +1,5 @@
 # `.customrc`
 
 ```
-echo MACHINE_NAME='⍺' > ~/.customrc
+echo γ > ~/.machine_name
 ```

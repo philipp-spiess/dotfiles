@@ -1,6 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+MACHINE_NAME=$(cat $HOME/.machine_name)
 ZSH_THEME="vader"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -20,7 +21,7 @@ ZSH_THEME="vader"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-DISABLE_AUTO_TITLE="true"
+# DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -53,7 +54,6 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin:$HOME/.
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-source $HOME/.customrc
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
