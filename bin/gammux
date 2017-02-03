@@ -1,0 +1,18 @@
+#!/bin/bash
+tmux has-session -t gamma
+if [ $? != 0 ]; then
+  tmux new-session -s gamma -n 'Gamma' -d
+  tmux send-keys -t gamma 'cd ~' C-m
+  
+  tmux new-window -t gamma:1 -n 'Control Tower' htop
+
+  tmux split-window -h -t gamma -p 50
+  tmux send-keys -t gamma:1.1 'cd ~/script' C-m
+  tmux send-keys -t gamma:1.1 './worker' C-m
+
+  tmux split-window -v -t gamma:1.1
+  tmux send-keys -t gamma:1.2 'watch -n 30 sensors' C-m
+fi
+
+tmux select-pane -t gamma:0.0
+tmux attach -t gamma
