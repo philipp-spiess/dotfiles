@@ -50,7 +50,7 @@ plugins=(git yarn zsh-autosuggestions zsh-syntax-highlighting)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin:$HOME/.yarn/bin:$HOME/dev/dotfiles/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin:$HOME/.yarn/bin:$HOME/.cargo/bin:$HOME/dev/dotfiles/bin"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
