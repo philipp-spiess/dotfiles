@@ -8,14 +8,14 @@ set -g status-fg cyan
 # Left side of status bar
 set -g status-left-bg black
 set -g status-left-fg green
-set -g status-left-length 40
-set -g status-left "#[fg=red,bold]#(cat $HOME/.machine_name) #[fg=white]» #[fg=green]#(spotify-info)"
+set -g status-left-length 0
+set -g status-left ""
 
 # Right side of status bar
 set -g status-right-bg black
 set -g status-right-fg cyan
 set -g status-right-length 40
-set -g status-right "#[fg=yellow]%d.%m.%y #[fg=white]« #[fg=green]%H:%M:%S #[fg=white]« #[fg=cyan]#(local_ip)"
+set -g status-right "#[fg=yellow]%d.%m.%y #[fg=white]« #[fg=green]%H:%M:%S #[fg=white]« #[fg=cyan]#(local_ip) #[fg=white]« #[fg=red,bold]#(cat $HOME/.machine_name)"
 
 # Window status
 set -g window-status-format " #I:#W#F "
@@ -33,7 +33,7 @@ set -g window-status-activity-fg black  # bug in tmux
 set -g window-status-separator ""
 
 # Window status alignment
-set -g status-justify centre
+set -g status-justify left
 
 # Pane border
 set -g pane-border-bg default
