@@ -1,0 +1,38 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "editor.fontSize": 16,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.fontFamily": "Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
+  "files.insertFinalNewline": true,
+
+  // Flow Support
+  "flow.useNPMPackagedFlow": true,
+  "javascript.validate.enable": false,
+
+  // Newline
+  "files.insertFinalNewline": true,
+  "workbench.activityBar.visible": false,
+  "files.trimTrailingWhitespace": true,
+
+  // Excluded for Search
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/coverage": true,
+    "**/dist": true
+  },
+
+  "editor.rulers": [
+    80,
+    100
+  ],
+
+  "window.zoomLevel": 0,
+
+  "cSpell.userWords": [
+    "pspdfkit"
+  ]
+}

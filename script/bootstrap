@@ -3,6 +3,9 @@
 cd "$(dirname "$0")/.."
 DOTFILES_ROOT=$(pwd -P)
 
+# Make newline the file seperator for the a loop
+IFS=$'\n'
+
 link_file () {
   local src=$1 dst=$2
 
@@ -38,26 +41,22 @@ link_file () {
       esac
     fi
 
-    if [ "$overwrite" == "true" ]
-    then
+    if [ "$overwrite" == "true" ]; then
       rm -rf "$dst"
       echo "removed $dst"
     fi
 
-    if [ "$backup" == "true" ]
-    then
+    if [ "$backup" == "true" ]; then
       mv "$dst" "${dst}.backup"
       echo "moved $dst to ${dst}.backup"
     fi
 
-    if [ "$skip" == "true" ]
-    then
+    if [ "$skip" == "true" ]; then
       echo "skipped $src"
     fi
   fi
 
-  if [ "$skip" != "true" ]  # "false" or empty
-  then
+  if [ "$skip" != "true" ]; then
     ln -s "$1" "$2"
     echo "linked $1 to $2"
   fi
@@ -76,7 +75,7 @@ ls_dotfiles () {
 install_dotfiles () {
   for src in $(ls_dotfiles); do
     relative=${src/"$DOTFILES_ROOT"/''}
-    link_file $src "$HOME$relative"
+    link_file "$src" "$HOME$relative"
   done
 }
 
