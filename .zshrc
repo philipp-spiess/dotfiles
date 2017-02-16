@@ -85,10 +85,10 @@ bindkey "^[[1;3C" forward-word
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
 alias atom="code"
 alias brightness="ddcctl -d 1 -b "
 alias gutenacht="brightness 30"
+alias t="wunderline"
 
 alias typo="gc -a -m 'Fixed Typo'"
 
