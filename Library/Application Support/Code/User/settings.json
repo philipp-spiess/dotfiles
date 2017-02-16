@@ -12,7 +12,7 @@
 
   // Newline
   "files.insertFinalNewline": true,
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.visible": true,
   "files.trimTrailingWhitespace": true,
 
   // Excluded for Search
@@ -22,7 +22,8 @@
     "**/.hg": true,
     "**/.DS_Store": true,
     "**/coverage": true,
-    "**/dist": true
+    "**/dist": true,
+    "web_test/_build": true
   },
 
   "editor.rulers": [
@@ -33,6 +34,10 @@
   "window.zoomLevel": 0,
 
   "cSpell.userWords": [
-    "pspdfkit"
+    "pspdfkit",
+    "FREETEXT",
+    "Unmount",
+    "PSPDF",
+    "KEYCODE"
   ]
 }

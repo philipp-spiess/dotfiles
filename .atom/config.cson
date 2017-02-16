@@ -19,10 +19,14 @@
       "wrap-guide"
     ]
     telemetryConsent: "limited"
+    themes: [
+      "atom-light-ui"
+      "atom-light-syntax"
+    ]
   docblockr:
     simple_mode: true
   editor:
-    fontSize: 18
+    fontSize: 23
     invisibles: {}
     preferredLineLength: 100
   "exception-reporting":
