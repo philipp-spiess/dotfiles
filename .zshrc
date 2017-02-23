@@ -74,7 +74,10 @@ export EDITOR='vim'
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 bindkey "^[[1;3D" backward-word
+bindkey "^[^[[D" backward-word
+
 bindkey "^[[1;3C" forward-word
+bindkey "^[^[[C" forward-word
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
