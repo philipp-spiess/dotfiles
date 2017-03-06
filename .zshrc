@@ -67,6 +67,13 @@ source $ZSH/oh-my-zsh.sh
 # fi
 export EDITOR='vim'
 
+# Deduplicate history
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_DUPS
+
+# Disable beep
+setopt NO_BEEP
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -74,10 +81,7 @@ export EDITOR='vim'
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 bindkey "^[[1;3D" backward-word
-bindkey "^[^[[D" backward-word
-
 bindkey "^[[1;3C" forward-word
-bindkey "^[^[[C" forward-word
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
