@@ -7,7 +7,7 @@ if [ $? != 0 ]; then
 
   tmux split-window -h -t pspdfkit -p 50
   tmux send-keys -t pspdfkit:1.2 'cd ~/dev/PSPDFKit-Web' C-m
-  tmux send-keys -t pspdfkit:1.2 'yarn test:unit:jest:watch' C-m
+  tmux send-keys -t pspdfkit:1.2 'yarn test:unit:watch' C-m
 
   tmux split-window -v -t pspdfkit:1.2
   tmux send-keys -t pspdfkit:1.3 'cd ~/dev/pssync-server' C-m

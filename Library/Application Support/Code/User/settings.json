@@ -27,7 +27,8 @@
   },
 
   "editor.rulers": [
-    74,
+    50,
+    72,
     100
   ],
 
@@ -38,7 +39,8 @@
     "FREETEXT",
     "Unmount",
     "PSPDF",
-    "KEYCODE"
+    "KEYCODE",
+    "affine"
   ],
   "workbench.iconTheme": "vs-seti"
 }

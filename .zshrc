@@ -46,7 +46,7 @@ ZSH_THEME="vader"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git yarn zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(asdf git yarn zsh-autosuggestions zsh-syntax-highlighting)
 
 # User configuration
 
@@ -82,6 +82,10 @@ setopt NO_BEEP
 
 bindkey "^[[1;3D" backward-word
 bindkey "^[[1;3C" forward-word
+
+# Set proper language strings
+export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
