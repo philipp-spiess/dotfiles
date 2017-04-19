@@ -27,7 +27,6 @@
   },
 
   "editor.rulers": [
-    50,
     72,
     100
   ],
@@ -40,7 +39,14 @@
     "Unmount",
     "PSPDF",
     "KEYCODE",
-    "affine"
+    "affine",
+    "backend",
+    "Truthy"
   ],
-  "workbench.iconTheme": "vs-seti"
+  "workbench.iconTheme": "vs-seti",
+
+  "prettier.semi": false,
+  "prettier.printWidth": 100,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5"
 }
