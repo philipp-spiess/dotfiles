@@ -107,3 +107,5 @@ export PSPDFKIT_WEBSITE_ASSETS='../PSPDFKit-Website-Assets'
 
 # Default workspace
 cd $HOME/dev
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
