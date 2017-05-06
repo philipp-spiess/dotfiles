@@ -6,6 +6,7 @@
       "source.ini": [
         ".buckconfig"
         ".flowconfig"
+        ".hgrc"
       ]
       "source.json": [
         ".arcconfig"
@@ -15,33 +16,46 @@
         "BUCK"
       ]
     disabledPackages: [
-      "nuclide"
       "wrap-guide"
+      "tree-view"
     ]
     telemetryConsent: "limited"
-    themes: [
-      "atom-light-ui"
-      "atom-light-syntax"
-    ]
   docblockr:
     simple_mode: true
   editor:
-    fontSize: 23
+    fontFamily: "Source Code Pro, Menlo, Monaco, 'Courier New', monospace"
+    fontSize: 16
     invisibles: {}
     preferredLineLength: 100
   "exception-reporting":
     userId: "d9049b40-7134-070e-fb29-238e601d443e"
-  linter:
-    errorPanelHeight: 24
+  linter: {}
   "linter-eslint": {}
   "linter-flow":
     executablePath: "/Users/philipp/dev/PSPDFKit-Web/node_modules/.bin/flow"
+  "linter-ui-default": {}
   "multi-wrap-guide":
     locked: true
   nuclide:
+    "nuclide-buck":
+      compileErrorDiagnostics: false
+      suggestTaskRunner: false
+    "nuclide-clang":
+      enableDefaultFlags: false
+    "nuclide-ctags":
+      disableWithHack: false
+    "nuclide-debugger-php":
+      stopOneStopAll: false
+    "nuclide-diagnostics-store":
+      consumeLegacyLinters: false
+      legacyLintOnTheFly: false
+    "nuclide-diff-view":
+      shouldDockPublishView: false
     "nuclide-distraction-free-mode": {}
     "nuclide-file-tree":
       showOpenFiles: false
+    "nuclide-flow":
+      canUseFlowBin: true
     "nuclide-format-js":
       nuclideFixHeader: false
       requiresAddMissingRequires: false
@@ -52,6 +66,14 @@
       requiresTransferComments: false
     "nuclide-home":
       showHome: false
+    "nuclide-objc":
+      enableAutomaticSquareBracketInsertion: false
+    "nuclide-ocaml":
+      enableDiagnostics: false
+    "nuclide-python":
+      autocompleteArguments: false
+      enableLinting: false
+      showGlobalVariables: false
     use:
       "nuclide-datatip": false
       "nuclide-debugger-native": false
