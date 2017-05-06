@@ -4,17 +4,13 @@
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.fontFamily": "Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
-  "files.insertFinalNewline": true,
-
   // Flow Support
   "flow.useNPMPackagedFlow": true,
   "javascript.validate.enable": false,
-
   // Newline
   "files.insertFinalNewline": true,
   "workbench.activityBar.visible": true,
   "files.trimTrailingWhitespace": true,
-
   // Excluded for Search
   "files.exclude": {
     "**/.git": true,
@@ -25,14 +21,11 @@
     "**/dist": true,
     "web_test/_build": true
   },
-
   "editor.rulers": [
     72,
     100
   ],
-
   "window.zoomLevel": 0,
-
   "cSpell.userWords": [
     "pspdfkit",
     "FREETEXT",
@@ -44,12 +37,9 @@
     "Truthy",
     "philipp",
     "rect",
-    "rects"
+    "rects",
+    "rasterized"
   ],
   "workbench.iconTheme": "vs-seti",
-
-  "prettier.semi": false,
-  "prettier.printWidth": 100,
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "es5"
+  "files.autoSave": "onFocusChange"
 }
