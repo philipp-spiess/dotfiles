@@ -23,6 +23,7 @@
   },
   "editor.rulers": [
     72,
+    80,
     100
   ],
   "window.zoomLevel": 0,
@@ -38,8 +39,13 @@
     "philipp",
     "rect",
     "rects",
-    "rasterized"
+    "rasterized",
+    "WASM",
+    "Emscripten"
   ],
   "workbench.iconTheme": "vs-seti",
-  "files.autoSave": "onFocusChange"
+  "flow.runOnEdit": false,
+  "files.associations": {
+    "*.tmpl": "ejs"
+  }
 }

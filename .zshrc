@@ -96,7 +96,7 @@ export LC_CTYPE=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias atom="code"
+alias atom="echo 'Use code'"
 alias brightness="ddcctl -d 1 -b "
 alias gutenacht="brightness 30"
 alias t="wunderline"

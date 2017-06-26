@@ -24,7 +24,7 @@
     simple_mode: true
   editor:
     fontFamily: "Source Code Pro, Menlo, Monaco, 'Courier New', monospace"
-    fontSize: 16
+    fontSize: 18
     invisibles: {}
     preferredLineLength: 100
   "exception-reporting":
