@@ -46,7 +46,7 @@ ZSH_THEME="vader"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(asdf git yarn zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(asdf git yarn zsh-autosuggestions zsh-syntax-highlighting bundler)
 
 # User configuration
 
@@ -96,12 +96,10 @@ export LC_CTYPE=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias atom="echo 'Use code'"
 alias brightness="ddcctl -d 1 -b "
 alias gutenacht="brightness 30"
-alias t="wunderline"
 
-alias typo="gc -a -m 'Fixed Typo'"
+alias typo="gc -a -m 'Fix Typo'"
 
 export PSPDFKIT_WEBSITE_ASSETS='../PSPDFKit-Website-Assets'
 
