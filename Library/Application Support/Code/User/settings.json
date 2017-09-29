@@ -19,7 +19,10 @@
     "**/.DS_Store": true,
     "**/coverage": true,
     "**/dist": true,
-    "web_test/_build": true
+    "web_test/_build": true,
+    "**/*.gif": true,
+    "**/*.png": true,
+    "build/*": true
   },
   "editor.rulers": [
     72,
@@ -47,5 +50,7 @@
   "flow.runOnEdit": false,
   "files.associations": {
     "*.tmpl": "ejs"
-  }
+  },
+  "atomKeymap.promptV3Features": true,
+  "editor.multiCursorModifier": "ctrlCmd",
 }
