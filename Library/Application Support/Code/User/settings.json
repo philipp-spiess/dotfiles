@@ -47,10 +47,11 @@
     "Emscripten"
   ],
   "workbench.iconTheme": "vs-seti",
-  "flow.runOnEdit": false,
+  "flow.runOnEdit": true,
   "files.associations": {
     "*.tmpl": "ejs"
   },
   "atomKeymap.promptV3Features": true,
   "editor.multiCursorModifier": "ctrlCmd",
+  "window.nativeTabs": false,
 }

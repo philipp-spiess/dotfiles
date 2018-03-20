@@ -50,7 +50,7 @@ plugins=(asdf git yarn zsh-autosuggestions zsh-syntax-highlighting bundler)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.rvm/bin:$HOME/.yarn/bin:$HOME/.cargo/bin:$HOME/dev/dotfiles/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.yarn/bin:$HOME/.cargo/bin:$HOME/dev/dotfiles/bin"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -107,3 +107,4 @@ export PSPDFKIT_WEBSITE_ASSETS='../PSPDFKit-Website-Assets'
 cd $HOME/dev
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
