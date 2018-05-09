@@ -6,10 +6,8 @@
   "editor.fontFamily": "Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
   // Flow Support
   "flow.useNPMPackagedFlow": true,
-  "javascript.validate.enable": false,
   // Newline
   "files.insertFinalNewline": true,
-  "workbench.activityBar.visible": true,
   "files.trimTrailingWhitespace": true,
   // Excluded for Search
   "files.exclude": {
@@ -46,7 +44,6 @@
     "WASM",
     "Emscripten"
   ],
-  "workbench.iconTheme": "vs-seti",
   "flow.runOnEdit": true,
   "files.associations": {
     "*.tmpl": "ejs"
@@ -54,4 +51,30 @@
   "atomKeymap.promptV3Features": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "window.nativeTabs": false,
+  "flow.useLSP": true,
+
+
+  "editor.folding": false,
+  "editor.hideCursorInOverviewRuler": true,
+  // "editor.lineNumbers": "off",
+  "editor.matchBrackets": false,
+  "editor.minimap.enabled": false,
+  "editor.occurrencesHighlight": false,
+  "editor.overviewRulerBorder": false,
+  "editor.renderIndentGuides": false,
+  "editor.renderLineHighlight": "none",
+  "editor.scrollbar.horizontal": "hidden",
+  "explorer.openEditors.visible": 0,
+  "workbench.activityBar.visible": false,
+  "workbench.colorTheme": "Subliminal",
+  "workbench.iconTheme": null,
+  "workbench.editor.showIcons": false,
+  "workbench.statusBar.visible": false,
+
+  "vscode_custom_css.imports": [
+    "file:///Users/philipp/dev/dotfiles/vscode-custom-css.css"
+  ],
+  "vscode_custom_css.policy": true,
+  "vscode_custom_css.statusbar": true,
+  "cSpell.showStatus": false,
 }
