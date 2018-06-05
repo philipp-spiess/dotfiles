@@ -52,6 +52,7 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "window.nativeTabs": false,
   "flow.useLSP": true,
+  "javascript.validate.enable": false,
 
 
   "editor.folding": false,
