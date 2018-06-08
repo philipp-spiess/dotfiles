@@ -101,6 +101,8 @@ alias gutenacht="brightness 30"
 
 alias typo="gc -a -m 'Fix Typo'"
 
+alias dc="docker-compose"
+
 export PSPDFKIT_WEBSITE_ASSETS='../PSPDFKit-Website-Assets'
 
 # Default workspace
