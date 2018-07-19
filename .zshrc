@@ -87,6 +87,8 @@ bindkey "^[[1;3C" forward-word
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 
+export JSGC_DISABLE_POISONING=1
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -102,6 +104,7 @@ alias gutenacht="brightness 30"
 alias typo="gc -a -m 'Fix Typo'"
 
 alias dc="docker-compose"
+alias gt="gittower ."
 
 export PSPDFKIT_WEBSITE_ASSETS='../PSPDFKit-Website-Assets'
 
