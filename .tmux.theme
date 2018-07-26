@@ -3,7 +3,7 @@ set -g status-interval 1
 
 # Basic status bar colors
 set -g status-bg black
-set -g status-fg cyan
+set -g status-fg colour228
 
 # Left side of status bar
 set -g status-left-bg black
@@ -13,20 +13,22 @@ set -g status-left ""
 
 # Right side of status bar
 set -g status-right-bg black
-set -g status-right-fg cyan
-set -g status-right-length 40
-set -g status-right "#[fg=yellow]%d.%m.%y #[fg=white]« #[fg=green]%H:%M:%S #[fg=white]« #[fg=cyan]#(local_ip) #[fg=white]« #[fg=red,bold]#(cat $HOME/.machine_name)"
+set -g status-right-fg white
+set -g status-right-length 50
+set -g status-right "#(spotify-info | cut -c 1-30) #[fg=colour245]« #[fg=colour228]#(local_ip)"
 
 # Window status
-set -g window-status-format " #I:#W#F "
-set -g window-status-current-format " #I:#W#F "
+set -g window-status-format " #[fg=colour245]#I:#[default]#W "
+set -g window-status-current-format " #I:#W "
 
 # Current window status
-set -g window-status-current-bg green
+set -g window-status-current-bg colour227
 set -g window-status-current-fg black
 
+set -g window-status-bell-fg green
+
 # Window with activity status
-set -g window-status-activity-bg yellow # fg and bg are flipped here due to a
+set -g window-status-activity-bg colour227 # fg and bg are flipped here due to a
 set -g window-status-activity-fg black  # bug in tmux
 
 # Window separator
@@ -37,11 +39,11 @@ set -g status-justify left
 
 # Pane border
 set -g pane-border-bg default
-set -g pane-border-fg default
+set -g pane-border-fg colour245
 
 # Active pane border
 set -g pane-active-border-bg default
-set -g pane-active-border-fg green
+set -g pane-active-border-fg colour227
 
 # Pane number indicator
 set -g display-panes-colour default
@@ -60,5 +62,5 @@ set -g message-command-bg default
 set -g message-command-fg default
 
 # Mode
-set -g mode-bg red
+set -g mode-bg colour204
 set -g mode-fg default
