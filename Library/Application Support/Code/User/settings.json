@@ -63,7 +63,7 @@
   "editor.scrollbar.horizontal": "hidden",
   "explorer.openEditors.visible": 0,
   "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "Material Theme Ocean High Contrast",
+  "workbench.colorTheme": "Dracula",
   "workbench.iconTheme": "eq-material-theme-icons-palenight",
   "workbench.editor.showIcons": false,
   "workbench.statusBar.visible": false,
