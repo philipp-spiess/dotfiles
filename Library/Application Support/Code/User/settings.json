@@ -64,7 +64,7 @@
   "explorer.openEditors.visible": 0,
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "Dracula",
-  "workbench.iconTheme": "eq-material-theme-icons-palenight",
+  "workbench.iconTheme": null,
   "workbench.editor.showIcons": false,
   "workbench.statusBar.visible": false,
 
