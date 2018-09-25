@@ -80,28 +80,5 @@
     }
   ],
   "breadcrumbs.enabled": true,
-  "workbench.startupEditor": "welcomePage",
-  "materialTheme.autoApplyIcons": false,
-  "workbench.colorCustomizations": {
-    "activityBarBadge.background": "#dc4446",
-    "list.activeSelectionForeground": "#dc4446",
-    "list.inactiveSelectionForeground": "#dc4446",
-    "list.highlightForeground": "#dc4446",
-    "scrollbarSlider.activeBackground": "#dc444650",
-    "editorSuggestWidget.highlightForeground": "#dc4446",
-    "textLink.foreground": "#dc4446",
-    "progressBar.background": "#dc4446",
-    "pickerGroup.foreground": "#dc4446",
-    "tab.activeBorder": "#dc4446",
-    "notificationLink.foreground": "#dc4446",
-    "editorWidget.resizeBorder": "#dc4446",
-    "editorWidget.border": "#dc4446",
-    "settings.modifiedItemIndicator": "#dc4446",
-    "settings.modifiedItemForeground": "#dc4446",
-    "settings.headerForeground": "#dc4446",
-    "panelTitle.activeBorder": "#dc4446",
-    "breadcrumb.activeSelectionForeground": "#dc4446",
-    "menu.selectionForeground": "#dc4446",
-    "menubar.selectionForeground": "#dc4446"
-  }
+  "workbench.startupEditor": "welcomePage"
 }
