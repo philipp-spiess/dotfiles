@@ -80,4 +80,11 @@
   "vscode_custom_css.statusbar": true,
   "cSpell.showStatus": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
+  "github.hosts": [
+    {
+      "host": "https://github.com",
+      "token": "system"
+    }
+  ],
+  "breadcrumbs.enabled": true,
 }
