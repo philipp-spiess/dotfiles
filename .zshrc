@@ -105,6 +105,8 @@ alias typo="gc -a -m 'Fix Typo'"
 
 alias dc="docker-compose"
 alias gt="gittower ."
+# https://mobile.twitter.com/NikkitaFTW/status/1056285803813453824
+alias yay="yarn"
 
 export PSPDFKIT_WEBSITE_ASSETS='../PSPDFKit-Website-Assets'
 
