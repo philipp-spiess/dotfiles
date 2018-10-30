@@ -63,7 +63,7 @@
   "editor.scrollbar.horizontal": "hidden",
   "explorer.openEditors.visible": 0,
   "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "lucy",
   "workbench.iconTheme": null,
   "workbench.editor.showIcons": false,
   "workbench.statusBar.visible": false,
