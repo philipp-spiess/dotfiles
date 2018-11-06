@@ -46,7 +46,7 @@ ZSH_THEME="vader"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(asdf git yarn zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(asdf git yarn zsh-autosuggestions zsh-syntax-highlighting bundler)
 
 # User configuration
 
