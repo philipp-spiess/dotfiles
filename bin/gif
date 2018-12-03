@@ -1,0 +1,21 @@
+#!/bin/sh
+
+function usage () {
+  echo "Usage:"
+  echo "  gif input.mov output.gif"
+  echo ""
+  exit 1
+}
+
+if [ -z "$1" ]; then
+  usage;
+fi
+if [ -z "$2" ]; then
+  usage;
+fi
+
+ffmpeg -i $1 -vf fps=15,scale=320:-1:flags=lanczos,palettegen SCRIPT_palette.png
+ffmpeg -i $1 -i SCRIPT_palette.png -filter_complex "fps=15,scale=400:-1:flags=lanczos[x];[x][1:v]paletteuse" $2
+rm SCRIPT_palette.png
+
+echo "Done."
