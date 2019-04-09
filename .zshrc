@@ -105,6 +105,8 @@ alias typo="gc -a -m 'Fix Typo'"
 
 alias dc="docker-compose"
 alias gt="gittower ."
+alias k="kubectl"
+alias d="docker"
 
 export PSPDFKIT_WEBSITE_ASSETS='../PSPDFKit-Website-Assets'
 
