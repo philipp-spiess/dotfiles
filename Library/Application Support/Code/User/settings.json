@@ -4,8 +4,6 @@
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.fontFamily": "Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
-  // Flow Support
-  "flow.useNPMPackagedFlow": true,
   // Newline
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
@@ -36,7 +34,9 @@
     "WASM",
     "affine",
     "backend",
+    "frontmatter",
     "hashids",
+    "linaria",
     "philipp",
     "polyfilled",
     "pspdfkit",
@@ -45,15 +45,12 @@
     "rect",
     "rects"
   ],
-  "flow.runOnEdit": true,
   "files.associations": {
     "*.tmpl": "ejs"
   },
   "atomKeymap.promptV3Features": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "window.nativeTabs": false,
-  "flow.useLSP": true,
-  "javascript.validate.enable": false,
 
   "editor.hideCursorInOverviewRuler": true,
   "editor.minimap.enabled": false,
@@ -64,12 +61,14 @@
   "editor.scrollbar.horizontal": "hidden",
   "explorer.openEditors.visible": 0,
   "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "lucy",
+  "workbench.colorTheme": "Night Owl",
   "workbench.iconTheme": null,
   "workbench.editor.showIcons": false,
   "workbench.statusBar.visible": false,
 
-  "vscode_custom_css.imports": ["file:///Users/philipp/dev/dotfiles/vscode-custom-css.css"],
+  "vscode_custom_css.imports": [
+    "file:///Users/philipp/dev/dotfiles/vscode-custom-css.css"
+  ],
   "vscode_custom_css.policy": true,
   "vscode_custom_css.statusbar": true,
   "cSpell.showStatus": false,
@@ -82,5 +81,7 @@
   ],
   "breadcrumbs.enabled": true,
   "workbench.startupEditor": "welcomePage",
-  "search.location": "sidebar"
+  "search.location": "sidebar",
+  "editor.formatOnSave": true,
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }
