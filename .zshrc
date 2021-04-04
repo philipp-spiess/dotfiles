@@ -46,7 +46,7 @@ ZSH_THEME="vader"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(asdf git yarn zsh-autosuggestions zsh-syntax-highlighting bundler)
+plugins=(git yarn zsh-autosuggestions zsh-syntax-highlighting bundler)
 
 # User configuration
 
@@ -108,7 +108,7 @@ alias gt="gittower ."
 alias k="kubectl"
 alias d="docker"
 
-export PSPDFKIT_WEBSITE_ASSETS='../PSPDFKit-Website-Assets'
+. $(brew --prefix asdf)/asdf.sh
 
 # Default workspace
 cd $HOME/dev
