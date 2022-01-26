@@ -23,9 +23,9 @@
   "editor.rulers": [
     72,
     80,
-    100
+    100,
+    120
   ],
-  "window.zoomLevel": 1,
   "cSpell.userWords": [
     "Emscripten",
     "FREETEXT",
@@ -82,5 +82,23 @@
   "workbench.startupEditor": "welcomePage",
   "editor.formatOnSave": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.colorTheme": "Night Owl"
+  "workbench.colorTheme": "Night Owl (No Italics)",
+  "security.workspace.trust.untrustedFiles": "open",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+   // How many spaces do you wish the indentation was? The extension will *try* to match this.
+   "stretchySpaces.targetIndentation": 2,
+
+   // For which languages Stretchy Spaces should be activated (if empty it means all).
+   "stretchySpaces.includedLanguages": ["typescript"], // for example ["nim", "nims", "python"]
+
+   // For which languages Stretchy Spaces should be deactivated (if empty it means none).
+  "stretchySpaces.excludedLanguages": [],
+  "stretchySpaces.updateDelay": 10,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": 1, // for example ["plaintext"]
 }

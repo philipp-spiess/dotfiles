@@ -2,18 +2,15 @@
 set -g status-interval 1
 
 # Basic status bar colors
-set -g status-bg black
-set -g status-fg colour228
+set -g status-style bg=black,fg=colour228
 
 # Left side of status bar
-set -g status-left-bg black
-set -g status-left-fg green
+set -g status-left-style bg=black,fg=green
 set -g status-left-length 0
 set -g status-left ""
 
 # Right side of status bar
-set -g status-right-bg black
-set -g status-right-fg white
+set -g status-right-style bg=black,fg=white
 set -g status-right-length 50
 set -g status-right "#(spotify-info | cut -c 1-30) #[fg=colour245]« #[fg=colour228]#(local_ip)"
 
@@ -22,14 +19,12 @@ set -g window-status-format " #[fg=colour245]#I:#[default]#W "
 set -g window-status-current-format " #I:#W "
 
 # Current window status
-set -g window-status-current-bg colour227
-set -g window-status-current-fg black
+set -g window-status-current-style bg=colour227,fg=black
 
-set -g window-status-bell-fg green
+set -g window-status-bell-style fg=green
 
 # Window with activity status
-set -g window-status-activity-bg colour227 # fg and bg are flipped here due to a
-set -g window-status-activity-fg black  # bug in tmux
+set -g window-status-activity-style bg=colour227,fg=black
 
 # Window separator
 set -g window-status-separator ""
@@ -38,12 +33,10 @@ set -g window-status-separator ""
 set -g status-justify left
 
 # Pane border
-set -g pane-border-bg default
-set -g pane-border-fg colour245
+set -g pane-border-style bg=default,fg=colour245
 
 # Active pane border
-set -g pane-active-border-bg default
-set -g pane-active-border-fg colour227
+set -g pane-active-border-style bg=default,fg=colour227
 
 # Pane number indicator
 set -g display-panes-colour default
@@ -54,13 +47,10 @@ set -g clock-mode-colour red
 set -g clock-mode-style 24
 
 # Message
-set -g message-bg default
-set -g message-fg default
+set -g message-style bg=default,fg=default
 
 # Command message
-set -g message-command-bg default
-set -g message-command-fg default
+set -g message-command-style bg=default,fg=default
 
 # Mode
-set -g mode-bg colour204
-set -g mode-fg default
+set -g mode-style bg=colour204,fg=default

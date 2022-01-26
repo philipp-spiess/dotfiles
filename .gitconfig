@@ -13,3 +13,5 @@
 	program = /usr/local/bin/gpg
 [commit]
 	gpgsign = false
+[pull]
+	rebase = false

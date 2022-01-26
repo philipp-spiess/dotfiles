@@ -50,7 +50,7 @@ plugins=(git yarn zsh-autosuggestions zsh-syntax-highlighting bundler)
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.yarn/bin:$HOME/.cargo/bin:$HOME/dev/dotfiles/bin:/opt/facebook/bin:/opt/facebook/hg/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.yarn/bin:$HOME/.cargo/bin:$HOME/dev/dotfiles/bin:/opt/facebook/bin:/opt/facebook/hg/bin:$HOME/.asdf/installs/golang/1.17.5/packages/bin"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -107,6 +107,8 @@ alias dc="docker-compose"
 alias gt="gittower ."
 alias k="kubectl"
 alias d="docker"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 . $(brew --prefix asdf)/asdf.sh
 
