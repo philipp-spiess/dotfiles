@@ -110,6 +110,7 @@ alias d="docker"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+unset ASDF_DIR
 . $(brew --prefix asdf)/asdf.sh
 
 # Default workspace
