@@ -50,7 +50,7 @@ plugins=(git yarn zsh-autosuggestions zsh-syntax-highlighting bundler)
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.yarn/bin:$HOME/.cargo/bin:$HOME/dev/dotfiles/bin:/opt/facebook/bin:/opt/facebook/hg/bin:$HOME/.asdf/installs/golang/1.17.5/packages/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.sg:$HOME/.yarn/bin:$HOME/.cargo/bin:$HOME/dev/dotfiles/bin:/opt/facebook/bin:/opt/facebook/hg/bin"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -113,8 +113,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 unset ASDF_DIR
 . $(brew --prefix asdf)/asdf.sh
 
-# Default workspace
-cd $HOME/dev
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
+export PATH="$PATH:/usr/local/opt/imagemagick@6/bin"
+autoload -Uz compinit && compinit
+PROG=sg source /Users/philipp/.sourcegraph/sg.zsh_autocomplete

@@ -1,10 +1,9 @@
 [user]
 	name = Philipp Spiess
 	email = hello@philippspiess.com
-	signingkey = C9324A30
 [core]
 	excludesfile = ~/.gitignore_global
-	editor = vim
+	editor = code --wait --new-window
 [alias]
 	ir = rebase -i origin/master --autosquash --gpg-sign=hello@philippspiess.com
 	c = commit
@@ -15,3 +14,9 @@
 	gpgsign = false
 [pull]
 	rebase = false
+[merge]
+	conflictstyle = diff3
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
