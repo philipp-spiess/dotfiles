@@ -1,9 +1,9 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.fontSize": 16,
+  "editor.fontSize": 14,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
-  "editor.fontFamily": "Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Fira Code",
   // Newline
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
@@ -26,8 +26,11 @@
     "backend",
     "codeownership",
     "Emscripten",
+    "entrypoints",
     "FREETEXT",
     "frontmatter",
+    "gitserver",
+    "graphqlutil",
     "hashids",
     "KEYCODE",
     "linaria",
@@ -140,5 +143,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "window.commandCenter": true,
-  "git.autofetch": true
+  "git.autofetch": true,
+  "workbench.activityBar.visible": false,
+  "editor.fontLigatures": false,
+  "editor.fontWeight": "300"
 }
