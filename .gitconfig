@@ -7,6 +7,7 @@
 [alias]
 	ir = rebase -i origin/master --autosquash --gpg-sign=hello@philippspiess.com
 	c = commit
+	undo = reset --soft HEAD^
 [commit]
 [gpg]
 	program = /usr/local/bin/gpg

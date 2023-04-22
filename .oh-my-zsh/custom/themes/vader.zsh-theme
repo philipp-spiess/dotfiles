@@ -33,7 +33,7 @@ function sl_prompt_info() {
 
 local ret_status="%(?:%{$FG[245]%}$MACHINE_NAME:%{$FG[204]%}$MACHINE_NAME)"
 
-PROMPT='${ret_status} %{$FG[228]%}%c%{$reset_color%} $(git_fast_prompt_info)'
+PROMPT='${ret_status} %{$FG[228]%}%2d%{$reset_color%} $(git_fast_prompt_info)'
 
 ZSH_THEME_VCS_PROMPT_PREFIX="%{$FG[245]%}("
 ZSH_THEME_VCS_PROMPT_SUFFIX="%{$reset_color%} "
