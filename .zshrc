@@ -116,4 +116,13 @@ unset ASDF_DIR
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH="$PATH:/usr/local/opt/imagemagick@6/bin"
 autoload -Uz compinit && compinit
-PROG=sg source /Users/philipp/.sourcegraph/sg.zsh_autocomplete
+# PROG=sg source /Users/philipp/.sourcegraph/sg.zsh_autocomplete
+source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
+
+# pnpm
+export PNPM_HOME="/Users/philipp/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
